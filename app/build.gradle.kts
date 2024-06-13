@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id ("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -74,6 +75,6 @@ dependencies {
     // Firebase
     implementation ("com.google.firebase:firebase-database:20.0.3")
     implementation ("com.google.firebase:firebase-auth:21.0.1")
-    implementation("libs.firebase.database.ktx")
+    implementation("com.google.firebase:firebase-database-ktx:20.0.3")
 
 }
